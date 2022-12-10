@@ -50,6 +50,7 @@ body {
   color: white;
   padding: 13px 23px;
   text-decoration: none;
+  font-size: 25px;
   font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -142,11 +143,31 @@ div {
 }
 
 video {
-  width: 450px;
+  width: 475px;
   padding-right: 35px;
 }
 
+#ha {
+  font-size: 37px;
+}
+
+#hi {
+    font-size: 37px;
+}
+
 @media screen and (max-width: 600px) {
+  video {
+    width: 275px;
+    padding-right: 35px;
+  }
+
+  .animation-card .animation-card-container {
+    align-items: center;
+    /* display: flex;
+    justify-content: space-between; */
+    margin: 0 auto;
+    /* max-width: 1100px; */
+  }
   
 }
 

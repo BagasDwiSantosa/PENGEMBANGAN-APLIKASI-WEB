@@ -112,15 +112,18 @@ function openNav(movie) {
       }else{
         OverlayContent.innerHTML =` <h1 class="no-result">No Result</h1>
       `}
+    
     }
   })
   
 }
 
-window.onclick = closeNav;
+
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+window.onclick = closeNav;
+
 
 }function getColor(vote) {
     if(vote>= 8){
