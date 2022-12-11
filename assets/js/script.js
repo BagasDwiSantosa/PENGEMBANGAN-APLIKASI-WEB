@@ -78,7 +78,7 @@ function showMovies(data) {
           
     })
     });
-
+  }
 const OverlayContent = document.getElementById('overlay-content');
 /* Open when someone clicks on the span element */
 function openNav(movie) {
@@ -112,20 +112,17 @@ function openNav(movie) {
       }else{
         OverlayContent.innerHTML =` <h1 class="no-result">No Result</h1>
       `}
-    
     }
   })
-  
 }
 
-
+window.onclick = closeNav;
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-window.onclick = closeNav;
 
 
-}function getColor(vote) {
+function getColor(vote) {
     if(vote>= 8){
         return 'green'
     }else if (vote >= 5){
